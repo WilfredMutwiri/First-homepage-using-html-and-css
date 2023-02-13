@@ -6,13 +6,14 @@
     box-sizing: border-box;
 }
 body{
+    background-color: rgb(212, 212, 212);
     font-family:'Courier New', Courier, monospace;
 }
 span{
     color: blue;
 }
 nav{
-    background-color: rgb(43, 43, 44);
+    background-color: rgb(48, 48, 48);
     height: 80px;
     width: 100%;
 }
@@ -42,4 +43,59 @@ nav ul li a{
 .active,a:hover{
     background:rgb(221, 16, 16);
     transition: 5ms;
+}
+.def h2{
+font-size:59px;
+font-family: 'Times New Roman', Times, serif;
+color: rgb(31, 30, 30);
+line-height: normal;
+background-color: rgb(180, 178, 178);
+}
+.img{
+    background-image: url("Screenshot_20230213_195923-removebg-preview.png");
+    background-color: rgb(194, 190, 190);
+    float:right;
+    height:650px;
+    width:100%;
+    background-position-x:750px;
+    background-size:790px;
+    background-repeat: no-repeat;
+    margin-top:0px;
+}
+.img p{
+    transition:transform .5s;
+    font-style:normal;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    padding-left:200px;
+    margin-top: 160px;
+    font-size: 100px;
+    font-weight: bold;
+    color: rgb(50, 6, 247);
+}
+.img p:hover{
+    transform:scale(1.1);
+    color: rgb(223, 35, 35);
+    font-style:italic;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform:capitalize; 
+    font-size:120px;
+}
+.btn{
+    width: 100%;
+    background-color: rgb(197, 196, 196);
+}
+.btn button{
+    height:100px;
+    margin-left:50%;
+    width: 200px;
+    border-radius:20px;
+    font-size:25px;
+    background-color: rgb(43, 43, 78);
+    border: none;
+    color: rgb(250, 206, 206);
+    transition: transform .5s;
+}
+.btn button:hover{
+    transform:scale(1.2);
+    background-color: rgb(184, 48, 48);
 }
