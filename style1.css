@@ -6,20 +6,21 @@
     box-sizing: border-box;
 }
 body{
-    background-color: rgb(212, 212, 212);
+    background-color:rgb(204, 200, 200);
     font-family:'Courier New', Courier, monospace;
+    color: rgb(8, 8, 8);
 }
 span{
     color: blue;
 }
 nav{
-    background-color: rgb(48, 48, 48);
+    background-color:rgb(46, 44, 44);
     height: 80px;
     width: 100%;
 }
 label.logo{
-    color: white;
-    font-size: 40px;
+    color: rgb(247, 242, 242);
+    font-size: 25px;
     line-height:80px;
     padding: 0;
     font-weight: bold;
@@ -32,10 +33,11 @@ nav ul li{
     display: inline-block;
     line-height: 80px;
     margin:  0 5px;
+    font-weight: bold;
 }
 nav ul li a{
     text-transform: uppercase;
-    color: white;
+    color: rgb(253, 251, 251);
     font-size: 17px;
     padding: 7px 13px;
     border-radius: 3px;
@@ -44,58 +46,202 @@ nav ul li a{
     background:rgb(221, 16, 16);
     transition: 5ms;
 }
+.def{
+    background-color:rgb(204, 200, 200);
+    width:450px;
+    height:400px;
+}
 .def h2{
-font-size:59px;
+font-size:50px;
+margin-top: 40px;
+margin-left:50px;
+line-height: 70px;
 font-family: 'Times New Roman', Times, serif;
-color: rgb(31, 30, 30);
+color: rgb(39, 49, 40);
 line-height: normal;
-background-color: rgb(180, 178, 178);
+transition: transform 5000ms;
+}
+.def h2:hover{
+    transform: scale(1.2);
 }
 .img{
+    display: flex;
     background-image: url("Screenshot_20230213_195923-removebg-preview.png");
-    background-color: rgb(194, 190, 190);
-    float:right;
-    height:650px;
-    width:100%;
-    background-position-x:750px;
-    background-size:790px;
+    background-position-x:center;
+    background-size:40%;
     background-repeat: no-repeat;
-    margin-top:0px;
+    margin-top:-400px;
+    transition: transform 4000ms;
+}
+.img:hover{
+    transform: scale(1.1);
 }
 .img p{
     transition:transform .5s;
     font-style:normal;
     font-family:Georgia, 'Times New Roman', Times, serif;
-    padding-left:200px;
-    margin-top: 160px;
-    font-size: 100px;
-    font-weight: bold;
-    color: rgb(50, 6, 247);
+    padding-left:70px;
+    margin-top: 250px;
+    margin-bottom: 70px;
+    font-size: 40px;
+    font-weight:bold;
+    color: rgb(69, 45, 175);
 }
 .img p:hover{
     transform:scale(1.1);
-    color: rgb(223, 35, 35);
-    font-style:italic;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(148, 51, 51);
+    font-weight: bold;
+    font-style:normal;
+    font-family:Georgia, 'Times New Roman', Times, serif;
     text-transform:capitalize; 
-    font-size:120px;
+    font-size:40px;
 }
 .btn{
     width: 100%;
-    background-color: rgb(197, 196, 196);
 }
 .btn button{
-    height:100px;
+    margin-top: 24px;
+    height:65px;
     margin-left:50%;
-    width: 200px;
-    border-radius:20px;
+    width: 135px;
+    border-radius:14px;
     font-size:25px;
     background-color: rgb(43, 43, 78);
     border: none;
-    color: rgb(250, 206, 206);
-    transition: transform .5s;
+    color: rgb(238, 192, 192);
+    transition: transform 5000ms;
 }
 .btn button:hover{
     transform:scale(1.2);
-    background-color: rgb(184, 48, 48);
+}
+.about{
+    width: 100%;
+    height:auto;
+    display: flex;
+    align-content: space-between;
+    margin-top: 100px;
+    background-color: rgb(37, 34, 34);
+}
+.about h1{
+    color: white;
+    margin: 20px 20px ;
+}
+#mission{
+    margin-left: 200px;
+    margin-top: 50px;
+    height:190px;
+    width: 260px;
+    border-color: black ;
+    background-color: rgb(70, 68, 68);
+    color: white;
+    border-radius: 20px;
+    transition: transform 5000ms;
+}
+#mission h2{
+    color:white;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+#mission p{
+    padding-left: 20px;
+    font-size: 20px;
+    color: rgb(173, 208, 238);
+    font-family: 'Times New Roman', Times, serif;
+}
+#mission:hover{
+    transform: scale(1.2);
+    background-color: rgb(204, 24, 24);
+}
+#vision{
+    margin-top: 50px;
+    margin-left:40px;
+    height: 190px;
+    width: 260px;
+    border-color: black ;
+    background-color: black;
+    color: white; 
+    border-radius: 20px;  
+    background-color: rgb(70, 68, 68);
+    transition: transform 5000ms
+}
+#vision:hover{
+    transform: scale(1.2);
+    background-color: rgb(204, 24, 24);
+}
+#vision p{
+    padding-left: 20px;
+    font-size: 20px;
+    color: rgb(173, 208, 238);
+    font-family: 'Times New Roman', Times, serif;
+}
+#vision h2{
+    color:white;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+#services{
+    margin-top: 50px;
+    transition: transform 5000ms;
+    margin-left:40px;
+    height: 190px;
+    width: 260px;
+    border-color: black ;
+    background-color: black;
+    color: white; 
+    border-radius: 20px;
+    background-color: rgb(70, 68, 68);
+}
+#services:hover{
+    transform: scale(1.2);
+    background-color: rgb(204, 24, 24)
+}
+#services p{
+    padding-left: 20px;
+    transition: transform 5000ms;
+    font-size: 20px;
+    color: rgb(173, 208, 238);
+    font-family: 'Times New Roman', Times, serif;
+}
+#services p:hover{
+    transform: scale(1.2);
+    background-color: rgb(204, 24, 24)
+}
+#services ul li{
+    padding-left: 20px;
+    transition: transform 5000ms;
+    font-size: 20px;
+    color: rgb(245, 95, 8);
+    font-family: 'Times New Roman', Times, serif;
+}
+#services ul li:hover{
+    transform: scale(1.2);
+    color: white;
+}
+#services h2{
+    color:white;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+@media(max-width: 900px)
+{
+    body{
+        width: 100%;
+        height: auto;
+    }
+    .img{
+        width: 100%;
+        height: auto;
+    }
+}
+@media(min-width: 700px)
+{
+    body{
+        width: 100%;
+        height: auto;
+    }
+    .img{
+        width:100%;
+        height: auto;
+
+    }
 }
